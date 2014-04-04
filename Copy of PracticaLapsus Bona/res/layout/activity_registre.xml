@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8F3F3"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Registre" >
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="31dp"
+        android:background="@drawable/pic_border" />
+
+    <ImageButton
+        android:id="@+id/ferfoto"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/foto"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:onClick="ferUnaFoto"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/lblNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ferfoto"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/nom" />
+
+    <Button
+        android:id="@+id/Entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:text="Entra"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/editNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblNom"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/lblNom"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblCognom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editCognom"
+        android:layout_alignBottom="@+id/editCognom"
+        android:layout_alignLeft="@+id/lblNom"
+        android:text="@string/cognom" />
+
+    <EditText
+        android:id="@+id/editCognom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNom"
+        android:layout_toRightOf="@+id/lblCognom"
+        android:ems="10" />
+
+</RelativeLayout>

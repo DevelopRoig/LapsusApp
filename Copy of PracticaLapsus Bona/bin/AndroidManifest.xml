@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.practicalapsus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.practicalapsus.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.practicalapsus.Registre"
+            android:label="@string/title_activity_registre"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.practicalapsus.Menu_principal"
+            android:label="@string/title_activity_menu_imatges" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.practicalapsus.GravacioAudio"
+            android:label="@string/title_activity_gravacio_audio" 
+            android:parentActivityName="com.example.practicalapsus.Menu_principal">
+            
+        </activity>
+        <activity
+            android:name="com.example.practicalapsus.Llista"
+            android:label="@string/title_activity_llista" 
+            android:parentActivityName="com.example.practicalapsus.GravacioAudio"
+            >
+        </activity>
+        <activity
+            android:name="com.example.practicalapsus.Galeria"
+            android:label="@string/title_activity_galeria" 
+            android:parentActivityName="com.example.practicalapsus.Menu_principal">
+        </activity>
+        <activity
+            android:name="com.example.practicalapsus.ImatgeComplerta"
+            android:label="@string/title_activity_imatge_complerta" 
+            android:parentActivityName="com.example.practicalapsus.Galeria">
+        </activity>
+      
+        <activity
+            android:name="com.example.practicalapsus.Reproductor"
+            android:label="@string/title_activity_reproductor" 
+            android:screenOrientation="landscape"
+            android:parentActivityName="com.example.practicalapsus.Menu_principal">
+        </activity>
+        <activity
+            android:name="com.example.practicalapsus.Informacio"
+            android:label="@string/title_activity_informacio" 
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.practicalapsus.Menu_principal">
+        </activity>
+    </application>
+
+</manifest>

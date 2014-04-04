@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" 
+    android:background="#D8F3F3">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="114dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo_info" />
+
+    <ScrollView
+        android:id="@+id/scrollViewText"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:layout_marginTop="120dp" >
+
+        <TextView
+            android:id="@+id/explicationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:text="LAPSUS neix durant l’octubre de 2010 a Olot després d’ajuntar-se tres 
+dels quatre components actuals del grup: Alex Vidal (guitarra i veus),
+Marc Castañé (guitarra i veu) i Joan València (bateria). 
+
+Passat poc més d’un mes i havent composat algun tema, LAPSUS decideix 
+incorporar un nou component,David Roig (baix). 
+Satisfets per la bona relació entre els quatre membres del grup, 
+continuen composant temes i buscant possibles actuacions per donar-se 
+a conèixer i poder començar la seva carrera musical."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/imatge12" />
+
+</RelativeLayout>

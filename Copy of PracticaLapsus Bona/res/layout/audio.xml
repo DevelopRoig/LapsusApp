@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#D8F3F3">
+
+    <ImageView
+        android:id="@+id/imgMicro"
+        android:layout_width="170dp"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:src="@drawable/microphone" />
+
+    <ImageView
+        android:id="@+id/imgRec"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgMicro"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/record" />
+
+    <ImageView
+        android:id="@+id/imgPlay"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgRec"
+        android:src="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/imgLlista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/list" />
+
+    <ImageView
+        android:id="@+id/rec"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgMicro"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imgRec"
+        android:src="@drawable/rec" 
+        android:visibility="invisible"/>
+
+</RelativeLayout>

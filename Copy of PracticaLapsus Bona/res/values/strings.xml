@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lapsus App</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_registre">Registre</string>
+    <string name="benvinguda">Benvingut/da! Primer necessitem les teves dades! :)</string>
+    <string name="nom">Nom:</string>
+    <string name="cognom">Cognom:</string>
+    <string name="title_activity_menu_imatges">Menú</string>
+    <string name="copyright">© 2014 Copyright Lapsus. All Rights Reserved </string>
+    <string name="title_activity_gravadora_audio">Gravadora</string>
+    <string name="title_activity_llista">Llista</string>
+    <string name="title_activity_gravacio_audio">Nota de veu</string>
+    <string name="title_activity_galeria">Galeria</string>
+    <string name="title_activity_imatge_complerta">Galeria</string>
+    <string name="title_activity_info">Info</string>
+    <string name="title_activity_reproductor">Reproductor</string>
+    <string name="title_activity_informacio">Informacio</string>
+
+</resources>
